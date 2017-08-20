@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="s" %>
@@ -11,32 +11,38 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Casa do CÛdigo</h1>
+	<h1>Casa do C√≥digo</h1>
 	<form:form action="${s:mvcUrl('PC#gravar').build()}" 
 			method="post" commandName="produto">
 		<div>
-			<label>TÌtulo</label>
-			<input type="text" name="titulo">
+			<label>T√≠tulo</label>
+			<form:input path="titulo" />
 			<form:errors path="titulo" />
 		</div>
 		
 		<div>
-			<label>DescriÁ„o</label>
-			<textarea rows="10" cols="20" name="descricao"></textarea>
+			<label>Descri√ß√£o</label>
+			<form:textarea path="descricao" rows="10" cols="20" />
 			<form:errors path="descricao" />
 		</div>
 		
 		<div>
-			<label>P·ginas</label>
-			<input type="text" name="paginas">
+			<label>P√°ginas</label>
+			<form:input path="paginas" />
 			<form:errors path="paginas" />
+		</div>
+		
+		<div>
+		    <label>Data de Lan√ßamento</label>
+		    <form:input path="dataLancamento" />
+		    <form:errors path="dataLancamento" />
 		</div>
 		
 		<c:forEach items="${tipos}" var="tipoPreco" varStatus="status">
         <div>
             <label>${tipoPreco}</label>
-            <input type="text" name="precos[${status.index}].valor">
-            <input type="hidden" name="precos[${status.index}].tipo" value="${tipoPreco}">
+            <form:input path="precos[${status.index}].valor" />
+            <form:hidden path="precos[${status.index}].tipo" value="${tipoPreco}" />
         </div>
    		</c:forEach>
 		
