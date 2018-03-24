@@ -22,6 +22,10 @@ public class AppWebConfiguration {
 		InternalResourceViewResolver resolver = new InternalResourceViewResolver();
 		resolver.setPrefix("/WEB-INF/views/");
 		resolver.setSuffix(".jsp");
+
+		//resolver.setExposeContextBeansAsAttributes(true);
+		resolver.setExposedContextBeanNames("carrinhoCompras");
+
 		return resolver;
 	}
 
