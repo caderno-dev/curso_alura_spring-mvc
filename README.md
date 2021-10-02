@@ -1,7 +1,7 @@
 # Curso de Spring MVC
 
-- [Spring MVC I: Criando aplicações web](https://www.alura.com.br/curso-online-spring-mvc-1-criando-aplicacoes-web) ([Material](https://drive.google.com/drive/folders/0BxRoTi3VHAW1Sk5wSDZydFliX3M))
-- [Spring MVC II: Integração, cache, segurança e templates](https://www.alura.com.br/curso-online-springmvc-2-integracao-cache-seguranca-e-templates) ([Material](https://drive.google.com/drive/folders/0BxRoTi3VHAW1N0FZajNPLVFGb1E))
+- [Spring MVC I: Criando aplicações web](https://www.alura.com.br/curso-online-spring-mvc-1-criando-aplicacoes-web)
+- [Spring MVC II: Integração, cache, segurança e templates](https://www.alura.com.br/curso-online-springmvc-2-integracao-cache-seguranca-e-templates)
 
 ## Spring MVC I: Criando aplicações web
 
